@@ -1,0 +1,8 @@
+dash
+pandas
+numpy
+xlrd
+kaleido
+python-docx
+dash-loading-spinners
+scipy
