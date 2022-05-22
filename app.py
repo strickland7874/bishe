@@ -17,7 +17,7 @@ s = np.array([0.16, 0.48, 0.54, 0.65, 0.75, 1.00, 1.12, 1.22, 1.36, 1.55,
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = '地下水动力学'
-
+server = app.server
 app.layout = html.Div([
     html.H1('求解水文地质参数'),
 
@@ -292,4 +292,4 @@ def save_to_word(fit_type, n_clicks, figure, Q, r, slider1, slider2):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
